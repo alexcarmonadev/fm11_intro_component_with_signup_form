@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <meta
+      name="description"
+      content="Frontend Mentor Challenges are challenges to improve front-end coding skills by creating real projects."
+    />
+    <meta
+      name="keywords"
+      content="html, css, javascript, front-end, websites, frontendmentor"
+    />
+    <meta name="author" content="Alexcarmonadev" />
+  </head>
+  <body>
+    <!-- ------------MAIN------------ -->
+    <main class="main">
+
+      <!-- ------------MAIN HEADER------------ -->
+      <div class="main__header">
+        <h1 class="main__header-title">Learn to code by watching others</h1>
+        <p class="main__header-text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <!-- ------------CARDS------------ -->
+      <div class="main__cards">
+
+        <!-- ------------CARD PROMO------------ -->
+        <div class="card__promo">
+          <p class="card__promo-text">
+            <span class="card__promo-text--bold">Try it free 7 days </span>then
+            $20/mo. thereafter
+          </p>
+        </div>
+
+        <!-- ------------CARD FORMS------------ -->
+        <div class="card__forms">
+
+          <form id="form" class="form">
+            <div class="form-inputbox" data-error="First Name cannot be empty">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                class="form-input"
+                placeholder="First Name"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-inputbox" data-error="Last Name cannot be empty">
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                class="form-input"
+                placeholder="Last Name"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-inputbox" data-error="Looks like this is not an email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder="Email Address"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-inputbox" data-error="Password cannot be empty">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-input"
+                placeholder="Password"
+                autocomplete="off"
+              />
+            </div>
+            <button class="form-button" id="submit" type="submit">
+              Claim your free trial
+            </button>
+          </form>
+
+          <!-- ------------FORM FOOTER------------ -->
+          <p class="form__footer">
+            By clicking the button, you are agreeing to our
+            <a href="#" class="form__footer-terms">Terms and Services</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- ------------FOOTER------------ -->
+    <footer class="footer">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/alexcarmonadev" target="_blank"
+          >Alexcarmonadev</a
+        >.
+      </p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

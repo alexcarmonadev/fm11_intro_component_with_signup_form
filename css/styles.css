@@ -1,0 +1,315 @@
+:root {
+  /* ------------PRIMARY COLORS------------ */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* ------------ACCENT COLORS------------ */
+  --blue: hsl(248, 32%, 49%);
+
+  /* ------------NEUTRAL COLORS------------ */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  --red2: hsl(0, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+
+  /* ------------FONTS------------ */
+  --font: 'Poppins', sans-serif; /* 400, 500, 600, 700 */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  font-family: var(--font);
+  font-size: 16px;
+  background: var(--red) url('../assets/images/bg-intro-mobile.png') center
+    repeat;
+  background-size: 100% 100%;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background: var(--red) url('../assets/images/bg-intro-desktop.png') top left;
+  }
+}
+
+/* ------------MAIN------------ */
+.main {
+  margin-bottom: 2rem;
+  padding: 1.9rem 1.5rem 0;
+}
+
+@media screen and (min-width: 900px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 7.52rem 7.52rem 7.52rem 10rem;
+  }
+}
+
+/* ------------MAIN HEADER------------ */
+.main__header {
+  padding: 3.9rem 0.5rem 4.2rem 0.5rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.main__header-title {
+  margin-bottom: 1.1rem;
+  font-size: 1.7em;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.main__header-text {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 900px) {
+  .main__header {
+    padding: 4.2rem 0.5rem 4.2rem 0.36rem;
+    width: 36.5rem;
+    text-align: left;
+  }
+
+  .main__header-title {
+    margin-bottom: 2rem;
+    font-size: 3.06em;
+    line-height: 1.1;
+  }
+}
+
+/* ------------CARDS------------ */
+@media screen and (min-width: 900px) {
+  .main__cards {
+    margin-left: 0.29rem;
+    padding-bottom: 0;
+    width: 37.5rem;
+  }
+}
+
+/* ------------CARD PROMO------------ */
+.card__promo {
+  margin-bottom: 1.56rem;
+  text-align: center;
+  background-color: var(--blue);
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0 7px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 7px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card__promo-text {
+  padding: 1.28rem 3.75rem;
+  font-size: 0.98em;
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+.card__promo-text--bold {
+  font-weight: 600;
+  color: var(--white);
+}
+
+@media screen and (min-width: 900px) {
+  .card__promo {
+    max-width: 33.7rem;
+  }
+
+  .card__promo-text {
+    padding: 1.13rem 3.75rem;
+  }
+}
+
+/* ------------CARD FORMS------------ */
+.card__forms {
+  background-color: var(--white);
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0 7px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  position: relative;
+  padding: 1.56rem;
+}
+
+.form-input {
+  margin-bottom: 1rem;
+  padding: 1.23rem;
+  width: 100%;
+  font-family: var(--font);
+  font-weight: 600;
+  border: 1px solid #0002;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.form-input:focus {
+  border: 1px solid var(--dark-blue);
+}
+
+.form-input::-webkit-input-placeholder {
+  font-family: var(--font);
+  font-size: 1.07em;
+  font-weight: 600;
+}
+
+.form-input::-moz-placeholder {
+  font-family: var(--font);
+  font-size: 1.07em;
+  font-weight: 600;
+}
+
+.form-input:-ms-input-placeholder {
+  font-family: var(--font);
+  font-size: 1.07em;
+  font-weight: 600;
+}
+
+.form-input::-ms-input-placeholder {
+  font-family: var(--font);
+  font-size: 1.07em;
+  font-weight: 600;
+}
+
+.form-input::placeholder {
+  font-family: var(--font);
+  font-size: 1.07em;
+  font-weight: 600;
+}
+
+.form-button {
+  margin-bottom: -0.63rem;
+  padding: 1.2rem 0 0.8rem 0;
+  width: 100%;
+  font-family: var(--font);
+  font-size: 0.84rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--green);
+  color: var(--white);
+  border: transparent;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0 4px 0 rgba(23, 138, 23, 0.6);
+  box-shadow: 0 4px 0 rgba(23, 138, 23, 0.6);
+  outline: none;
+  cursor: pointer;
+}
+
+.form-inputbox--error {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+
+.form-inputbox--error::after {
+  content: attr(data-error);
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  font-size: 0.6em;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--red);
+}
+
+.form-inputbox--error::before {
+  content: '';
+  position: absolute;
+  bottom: 1.94rem;
+  right: 1.13rem;
+  width: 1.375rem;
+  height: 1.375rem;
+  background: url('../assets/images/icon-error.svg');
+  background-size: 100% 100%;
+}
+
+.form-inputbox--error .form-input {
+  border: 2px solid var(--red);
+}
+
+.form-inputbox--error #email::-webkit-input-placeholder {
+  color: var(--red2);
+}
+
+.form-inputbox--error #email::-moz-placeholder {
+  color: var(--red2);
+}
+
+.form-inputbox--error #email:-ms-input-placeholder {
+  color: var(--red2);
+}
+
+.form-inputbox--error #email::-ms-input-placeholder {
+  color: var(--red2);
+}
+
+.form-inputbox--error #email::placeholder {
+  color: var(--red2);
+}
+
+@media screen and (min-width: 900px) {
+  .card__forms {
+    padding: 1rem;
+    max-width: 33.7rem;
+  }
+
+  .form-input {
+    margin-bottom: 1.2rem;
+  }
+
+  .form-button:hover {
+    opacity: 0.7;
+  }
+
+  /* ------------FORM FOOTER------------ */
+  .form__footer {
+    padding: 0 2.81rem 1.7rem 2.81rem;
+    font-size: 0.69em;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--grayish-blue);
+  }
+
+  .form__footer-terms {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--red);
+  }
+
+  /* ------------FOOTER------------ */
+  .attribution {
+    padding-bottom: 2rem;
+    font-size: 0.6em;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .attribution a {
+    color: var(--blue);
+  }
+
+  @media screen and (min-width: 900px) {
+    .attribution {
+      font-size: 0.7rem;
+    }
+  }
+}
